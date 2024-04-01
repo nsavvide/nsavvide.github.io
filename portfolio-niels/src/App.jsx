@@ -3,14 +3,14 @@ import { Navbar } from "./components/Navbar";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Experience } from "./pages/Experience";
-import { Home } from "./pages/home";
 import { Projects } from "./pages/Projects";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
       <Navbar>
-        <Home />
+        <Home></Home>
         <Projects />
         <Experience />
         <About />

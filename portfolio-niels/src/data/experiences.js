@@ -1,44 +1,55 @@
-import genio from "../assets/images/genio.jpeg";
-import draic from "../assets/images/image2.png";
-import rbl from "../assets/images/RBL.png";
-import stealth from "../assets/images/stealth.jpeg";
+import thesis from "../assets/images/thesis.png";
+import jan from "../assets/images/jan.png";
+import sirus from "../assets/images/sirus.png";
+import alternatief from "../assets/images/alternatiefbv_logo.png";
+import depthsense from "../assets/images/depthsense.png";
 
-import { blue, green, pink, yellow } from "../utils";
+import { blue, orange, pink, red, yellow } from "../utils";
 
-export const experiences = [{
-        logo: stealth,
-        name: "Stealth Startup",
-        joined: "Sept'22",
-        end: "Feb'23",
-        title: "Full Stack Developer",
-        bio: "Utilized ExpressJS for backend authentication and rate limitation. The frontend ReactJS code was optimized, eliminating re-renders to enhance performance and user experience. A ReactJS and ExpressJS-based admin panel was developed for data visualization and transaction management.",
-        color: blue,
-    },
-    {
-        logo: rbl,
-        name: "RBL Bank",
-        joined: "June'22",
-        end: "July'22",
-        title: "Summer Intern",
-        bio: "Brainstormed various ideas with mentors and teammates for MoBank app. Developed HR portal backend using Django",
-        color: green,
-    },
-    {
-        logo: genio,
-        name: "GenioBits",
-        joined: "Dec'21",
-        end: "Mar'22",
-        title: "Full Stack Developer",
-        bio: "Worked on various projects from basic static sites to dynamic complex websites using ReactJS, Built Rest API's for various use cases",
-        color: yellow,
-    },
-    {
-        logo: draic,
-        name: "DRAIC",
-        joined: "Sept'19",
-        end: "Jan'22",
-        title: "Team Member",
-        bio: "In D.Y. Patil Robotics and A.I. club we developed collaborative skills. Built amazing projects and brainstormed on various problem statements",
-        color: pink,
-    },
+export const experiences = [
+  {
+    logo: alternatief,
+    name: "Alternatief BV",
+    joined: "Sept'23",
+    end: "-",
+    title: "Full Stack Developer",
+    bio: "Working on a financial management system aimed at other companies/people. We allow users to manage their invoices using custom flows and templates. We use C# and Angular.",
+    color: blue,
+  },
+  {
+    logo: sirus,
+    name: "Sirus NV",
+    joined: "June'23",
+    end: "August'23",
+    title: "Summer Intern",
+    bio: "Build a technological Lego City using IoT sensors. We used Microsoft technologies like 3D Scenes, on top of that we used  C++ for providing the microcontrollers with logic and Python for our Rasberry Pi.",
+    color: orange,
+  },
+  {
+    logo: thesis,
+    name: "Federated Learning for Intrusion Detection",
+    joined: "Sep'23",
+    end: "July'24",
+    title: "Data Engineer",
+    bio: "I worked on my Thesis: Heterogeneous Data Generalization in Distributed Intrusion Detection Systems: A Federated Learning Approach.",
+    color: red,
+  },
+  {
+    logo: jan,
+    name: "NulVision",
+    joined: "Jan'23",
+    end: "July'23",
+    title: "Software Developer",
+    bio: "For our Bachelor Work, we had to develop an Object Detection application for large drone images.",
+    color: pink,
+  },
+  {
+    logo: depthsense,
+    name: "Sony DepthSensing Solutions",
+    joined: "Sep'23",
+    end: "January'24",
+    title: "Machine Learning Engineer",
+    bio: "We helped Sony develop on an interesting project, this information however is disclosed.",
+    color: yellow,
+  },
 ];
