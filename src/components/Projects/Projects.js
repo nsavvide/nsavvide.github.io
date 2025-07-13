@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+
+// React Icons
+import { FaFirefoxBrowser, FaDiscord, FaMusic, FaGithub } from "react-icons/fa";
+import { SiLua, SiRust, SiGooglecalendar, SiOpencv, SiFedora, SiNeovim } from "react-icons/si";
+import { TbBinaryTree } from "react-icons/tb";
+import { BsKeyboard } from "react-icons/bs";
 
 function Projects() {
   return (
@@ -21,72 +21,84 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              icon={FaFirefoxBrowser}
+              title="CubedPotatoBrowser"
+              description="A custom browser built using Rust and CEF (Chromium Embedded Framework), designed for window tiling managers (WTMs). Optimized for low memory overhead, developer workflows, and native IPC-based multi-window control."
+              ghLink="https://github.com/nsavvide/CubedPotatoBrowser"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              icon={FaDiscord}
+              title="RustyDiscord"
+              description="A terminal user interface (TUI) Discord client built with Rust. Supports authentication, channels, direct messages, and message sending, with performance and minimalism in mind."
+              ghLink="https://github.com/nsavvide/RustyDiscord"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              icon={FaMusic}
+              title="RustySongs"
+              description="A TUI music management application written in Rust. Features YouTube integration, mp3 download and organization, playback controls, queue management, and dynamic playlist loading."
+              ghLink="https://github.com/nsavvide/RustySongs"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              icon={SiLua}
+              title="NotifyMe"
+              description="A Lua plugin for Neovim that fetches GitHub notifications and displays them directly in the editor. Designed for GitHub-native workflows without leaving the terminal."
+              ghLink="https://github.com/nsavvide/NotifyMe"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              icon={SiGooglecalendar}
+              title="rustyCalendar"
+              description="A CLI tool for interacting with Google Calendar from the terminal. Supports event creation, deletion, and querying. Built with Rust and OAuth integration."
+              ghLink="https://github.com/nsavvide/rustyCalendar"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              icon={SiOpencv}
+              title="SkyScope"
+              description="A private web application for local object detection. Capable of processing uploaded or streamed images using an embedded AI model pipeline. Useful for privacy-preserving CV tasks."
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              icon={SiFedora}
+              title="FederatedLearning"
+              description="Research project on improving generalization and robustness of intrusion detection systems using Federated Learning on heterogeneous datasets. Involves simulation of distributed training and client variability."
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              icon={SiNeovim}
+              title="PotatoDotFiles"
+              description="Private repository containing a curated set of dotfiles for Linux development, optimized for Neovim, i3, tmux, and CLI productivity."
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              icon={BsKeyboard}
+              title="corne_"
+              description="Private firmware and configuration for the Corne split keyboard, including custom keymaps, layers, and RGB behavior using QMK."
+            />
+          </Col>
+
         </Row>
       </Container>
     </Container>

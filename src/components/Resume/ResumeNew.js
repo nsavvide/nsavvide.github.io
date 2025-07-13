@@ -2,18 +2,30 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Soumyajit_Behera-BIT_MESRA.pdf";
+import pdf from "/home/niels/Desktop/side_projects/nsavvide.github.io/src/Assets/resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import "./Resume.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
+
+  useEffect(() => {
+    if (numPages && numPages > 1) {
+      const interval = setInterval(() => {
+        setCurrentPage((prev) => (prev % numPages) + 1);
+      }, 10000);
+      return () => clearInterval(interval);
+    }
+  }, [numPages]);
 
   return (
     <div>
@@ -32,8 +44,16 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          <Document
+            file={pdf}
+            className="d-flex justify-content-center align-items-center fade-transition"
+            onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+          >
+            <Page
+              pageNumber={currentPage}
+              scale={width > 786 ? 1.7 : 0.6}
+              key={currentPage}
+            />
           </Document>
         </Row>
 
