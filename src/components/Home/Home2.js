@@ -1,12 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.jpg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -16,40 +12,35 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              I'M <span className="orange"> NIELS SAVVIDES</span>
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I'm passionate about{" "}
+              <b className="purple">low-level programming</b> and the
+              open-source world.
               <br />
-              <br />I am fluent in classics like
+              <br />I enjoy working close to the metal with languages like
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> Rust, C++, and C#</b>
               </i>
+              , and I’m a strong believer in the power and freedom of
+              <b className="purple"> Linux</b> and open-source ecosystems.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              Through two internships and a student job, I’ve gained hands-on
+              experience with real-world
+              <b className="purple"> software integrations</b> and scalable
+              <b className="purple"> web technologies</b>. I’m comfortable
+              moving between backend systems and web stacks using
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
+                <b className="purple"> JavaScript and Python</b>
               </i>
+              , always aiming to build tools that are fast, reliable, and clean.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              Whether I’m writing a service in Rust, working on a web API, or
+              tweaking my Linux config, I love learning, building, and
+              contributing to meaningful software.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,7 +58,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/nsavvide"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,32 +68,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/niels-savvides-a59362268"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
                 </a>
               </li>
             </ul>

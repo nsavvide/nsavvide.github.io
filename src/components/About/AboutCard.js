@@ -8,33 +8,74 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Hi Everyone, I am <span className="purple">Niels Savvides</span>
+            from <span className="purple">Belgium</span>.
+            <br />I hold a Master's degree{" "}
+            <span className="purple">cum laude</span> in Information
+            Technologies from <span className="purple">Ghent University</span>,
+            and I am currently pursuing a Master's in
+            <span className="purple"> Computer Science Engineering</span>.
             <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            <br />I have worked at{" "}
+            <a
+              href="https://www.alternatief.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "orange",
+                textDecoration: "none",
+                fontWeight: "bold",
+              }}
+            >
+              AlternatiefBV
+            </a>
+            , and completed internships at{" "}
+            <a
+              href="https://sirus.be/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "orange",
+                textDecoration: "none",
+                fontWeight: "bold",
+              }}
+            >
+              SirusBV
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://www.qargo.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "orange",
+                textDecoration: "none",
+                fontWeight: "bold",
+              }}
+            >
+              Qargo
+            </a>
+            .
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Playing Chess
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Hitting the Gym
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Entertaining my Girlfriend 😄
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ color: "rgb(227, 115, 94)" }}>
+            "There is always a solution."
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Niels</footer>
         </blockquote>
       </Card.Body>
     </Card>
