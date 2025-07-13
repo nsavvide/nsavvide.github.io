@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/nsavvide.github.io/static/css/main.718cc745.css",
+    "main.js": "/nsavvide.github.io/static/js/main.8db1ed89.js",
+    "static/js/415.4d6acbeb.chunk.js": "/nsavvide.github.io/static/js/415.4d6acbeb.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/nsavvide.github.io/static/js/787.1ed0c42c.chunk.js",
+    "static/media/logo.png": "/nsavvide.github.io/static/media/logo.c5c82dae40a5a2310e54.png",
+    "static/media/avatar.jpg": "/nsavvide.github.io/static/media/avatar.5599c6dc58777ff0c5e2.jpg",
+    "static/media/resume.pdf": "/nsavvide.github.io/static/media/resume.3822049f4b97540c7873.pdf",
+    "static/media/main-img.jpg": "/nsavvide.github.io/static/media/main-img.65147c0bf7d634ee5da1.jpg",
+    "static/media/home-bg.jpg": "/nsavvide.github.io/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/pre.svg": "/nsavvide.github.io/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/nsavvide.github.io/index.html",
+    "main.718cc745.css.map": "/nsavvide.github.io/static/css/main.718cc745.css.map",
+    "main.8db1ed89.js.map": "/nsavvide.github.io/static/js/main.8db1ed89.js.map",
+    "415.4d6acbeb.chunk.js.map": "/nsavvide.github.io/static/js/415.4d6acbeb.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/nsavvide.github.io/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.718cc745.css",
+    "static/js/main.8db1ed89.js"
+  ]
+}
