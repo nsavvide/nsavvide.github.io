@@ -22,7 +22,7 @@
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://nsavvide.github.io/nsavvide.github.io",
+  "homepage": "https://nsavvide.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
